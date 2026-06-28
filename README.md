@@ -57,21 +57,21 @@ Translation and speech synthesis rely on two different underlying services with 
 ## Running it locally
 
 ```bash
-git clone https://github.com/OGO-1/linguaai.git
-cd linguaai
+git clone https://github.com/OGO-1/CodeAlpha_LanguageTranslationTool.git
+cd CodeAlpha_LanguageTranslationTool
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
 The app will open in your browser at `localhost:8501`.
 
-## A note on the development environment
-
-This app was built and tested inside a Kali Linux VM (VMware Workstation), accessed via the host machine's browser over the VM's network IP. Audio playback inside that specific VM setup could sometimes stutter — a known virtualization/audio-passthrough limitation of the development environment itself, not a bug in the app's logic. The underlying gTTS implementation is correct and generates valid audio; this app is best evaluated by running it directly in a normal browser (locally or via the Streamlit Cloud deployment below), where this VM-specific limitation doesn't apply.
-
 ## Live demo
 
-🔗 *Streamlit Cloud deployment link — coming soon*
+🔗 [Try LinguaAI live](https://codealphalanguagetranslationtool-2rwmxmgk39wuga8hzcwinw.streamlit.app)
+
+## A note on the development environment
+
+This app was built and tested inside a Kali Linux VM (VMware Workstation). During development, audio playback inside that specific VM setup occasionally stuttered — a virtualization/audio-passthrough quirk of the development environment itself, unrelated to the app's logic. The live demo above runs on Streamlit Cloud and isn't affected by this.
 
 ## About this project
 
